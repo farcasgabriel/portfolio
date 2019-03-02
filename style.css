@@ -59,7 +59,8 @@ header .header-cases {
 .index-banner {
   width: 100%;
   height: calc(100vh - 159px);
-  background-image: url(./img/ninja.jpeg);
+  background: linear-gradient(to right, #ff8a00, #7261a3),
+    url(./img/ninja.jpeg) no-repeat;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
