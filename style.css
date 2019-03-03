@@ -1,11 +1,18 @@
 /*MY CODE*/
+* {
+  text-decoration: none;
+  --buttonTextColor: #111;
+  --buttondBgColorHover: #673ab7;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
 
 body {
   background-color: #fffffc;
-}
-
-* {
-  text-decoration: none;
 }
 
 header {
@@ -172,11 +179,13 @@ footer ul li p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  z-index: 99;
 }
 
 .index-links a {
   flex: 1;
   min-width: 300px;
+  z-index: 99;
 }
 
 .section-link:nth-child(1),
@@ -193,6 +202,7 @@ footer ul li p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  z-index: 99;
 }
 
 .section-link {
@@ -207,10 +217,12 @@ footer ul li p {
 .section-link > a {
   color: #111;
   display: flex;
+  z-index: 99;
 }
 
 .section-link > a > h3 {
   margin: 0 0 0 10px;
+  z-index: 99;
 }
 
 @media only screen and (max-width: 600px) {
@@ -339,4 +351,16 @@ footer ul li p {
     line-height: 40px;
     text-transform: uppercase;
   }
+}
+
+.fa-spin-hover {
+  transition: transform 0.3s ease;
+}
+
+.section-link:hover .fa-spin-hover {
+  transform: rotate(360deg);
+}
+
+.content {
+  min-height: calc(100vh - 500px);
 }
