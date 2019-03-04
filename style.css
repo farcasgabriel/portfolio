@@ -206,12 +206,12 @@ footer ul li p {
 }
 
 .section-link {
-  background-color: #bfbdbd;
+  background: linear-gradient(to top, #975bba, #a997df);
   margin: 15px 15px 15px 15px;
 }
 
 .section-link:hover {
-  background-color: #b2b0b0;
+  background: linear-gradient(to top, #914aba, #9b85dd);
 }
 
 .section-link > a {
@@ -300,7 +300,7 @@ footer ul li p {
     width: calc(100% - 80px);
     padding: 40px 40px;
     margin-top: 20px;
-    background-color: #111;
+    background: linear-gradient(to top, #111, #200033);
     overflow: hidden;
   }
 
