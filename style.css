@@ -7,6 +7,8 @@
 
 html,
 body {
+  overflow-y: scroll;
+  overflow-x: hidden;
   height: 100%;
   margin: 0;
 }
@@ -21,15 +23,31 @@ header {
   height: 100px;
 }
 header .header-brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   font-family: Catamaran;
   font-size: 24px;
   font-weight: 900;
   color: #111;
   text-transform: uppercase;
-  display: block;
   margin: 0 auto;
   text-align: center;
   padding: 20px 0;
+}
+
+.header-brand img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.menu {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
 }
 
 header nav ul {
@@ -39,10 +57,10 @@ header nav ul {
 }
 
 header nav ul li {
-  display: inline-block;
   float: left;
+  height: fit-content;
   list-style: none;
-  padding: 0 16px;
+  padding: 0 10px;
 }
 
 header nav ul li a {
@@ -147,7 +165,8 @@ footer ul li a {
 
 .footer-sm > a > img {
   width: 100%;
-  margin: 0;
+  margin: 1px 0 1px 0;
+  width: 50px;
 }
 
 footer ul {
